@@ -3,7 +3,6 @@ import './App.scss';
 
 function getRandomName(): string {
   const value = Date.now().toString().slice(-4);
-
   return `Clock-${value}`;
 }
 
@@ -14,7 +13,7 @@ export const App: React.FC = () => {
   // This code starts a timer
   const timerId = window.setInterval(() => {
     clockName = getRandomName();
-  }, 3300);
+  }, 1000);
 
   // this code stops the timer
   window.clearInterval(timerId);
