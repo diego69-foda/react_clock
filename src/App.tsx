@@ -16,6 +16,10 @@ export const App: React.FC = () => {
     clockName = getRandomName();
   }, 1000);
 
+ componentDidUpdate (timerId) {    
+  console.log (timerId);
+}
+
   // this code stops the timer
   window.clearInterval(timerId);
 
